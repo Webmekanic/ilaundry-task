@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>this is the main app</main>
+      <main className="text-3xl font-bold underline">this is the main app</main>
     </>
   )
 }

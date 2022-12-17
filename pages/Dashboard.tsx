@@ -11,7 +11,7 @@ const Dashboard = () => {
         <div className="mx-56 h-screen">
           <Header />
           <p className="flex m-auto justify-center align-center mt-10 text-red">
-            Chart Goes in Here
+            Chart
           </p>
         </div>
         <div>

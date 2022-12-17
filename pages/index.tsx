@@ -3,7 +3,11 @@ import Image from "next/image"
 import Header from "../components/Header"
 import styles from "../styles/Home.module.css"
 import WidgetCard from "../components/WidgetCard"
+import StackedBarChart from "../components/StackedBarChart"
+import NotificationItem from "../components/NotificationItem"
+import LocationItem from "../components/LocationItem"
 import { Inter } from "@next/font/google"
+import Dashboard from "./Dashboard"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -18,8 +22,10 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        <WidgetCard />
-        <WidgetCard />
+        {/* <WidgetCard /> */}
+        {/* <StackedBarChart /> */}
+        {/* <NotificationItem /> */}
+        {/* <LocationItem /> */}
       </main>
     </>
   )

@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import NotificationItem from "../NotificationItem"
-import Bug from "../assets/Bug.svg"
+import Bug from "../assets/Beetle.svg"
 import FeaturedIcon from "../assets/FeaturedIcon.svg"
+import Waves from "../assets/Waves.svg"
 import Speaker from "../assets/FeaturedIcon.svg"
 
 const NotificationList = () => {
@@ -29,7 +30,7 @@ const NotificationList = () => {
       id: "4",
       description: "Andi Lane subscribed to you",
       date: "Yesterday 12:39 AM",
-      image: Speaker,
+      image: Waves,
     },
   ])
 

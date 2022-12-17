@@ -16,7 +16,7 @@ import ChatsTeardrop from "../assets/ChatsTeardrop.svg"
 
 const SideBar = () => {
   return (
-    <div className="w-56 border-r-2 border-ash  h-full fixed py-4 px-8">
+    <div className="w-50 border-r-2 border-ash  h-full fixed py-4 px-8">
       <div className="flex gap-3 align-center text-center">
         <Image src={Avatar} alt={Avatar} width={36} height={36} />
         <p className="self-center text-black text-lg">ByeWind</p>

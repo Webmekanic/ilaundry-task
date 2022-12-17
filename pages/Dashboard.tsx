@@ -8,7 +8,7 @@ const Dashboard = () => {
     <div className="w-full">
       <div className="">
         <SideBar />
-        <div className="mx-56 h-screen">
+        <div className="ml-56 mr-72 h-screen">
           <Header />
           <p className="flex m-auto justify-center align-center mt-10 text-red">
             Chart

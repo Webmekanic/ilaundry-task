@@ -9,13 +9,13 @@ import Bell from "./assets/Bell.svg"
 
 const Header = () => {
   return (
-    <nav className="flex m-auto border-b-2 border-ash justify-between py-4 px-8 ">
+    <nav className="flex m-auto border-b-2 border-ash justify-between py-4 px-8">
       <div className="flex self-center justify-between align-center text-center gap-2">
         <Image src={SidebarIcon} alt="sidebar" width={20} height={20} />
         <Image src={Star} alt="sidebar" width={20} height={20} />
         <ul className="flex text-center align-center gap-2">
-          <li>Dashboard</li> <span>/</span>
-          <li>Default</li>
+          <li className="text-md">Dashboard</li> <span>/</span>
+          <li className="text-md">Default</li>
         </ul>
       </div>
 

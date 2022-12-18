@@ -1,5 +1,6 @@
 import React from "react"
 import NotificationList from "./NotificationList"
+import ActivitiesList from "./ActivitiesList"
 
 const NotifySidebar = () => {
   return (
@@ -7,6 +8,7 @@ const NotifySidebar = () => {
       <h4 className="font-semibold mt-1">Notifications</h4>
       <NotificationList />
       <h4 className="font-semibold mt-4">Activities</h4>
+      <ActivitiesList />
     </div>
   )
 }

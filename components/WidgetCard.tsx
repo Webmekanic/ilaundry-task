@@ -7,19 +7,26 @@ type WidgetCardProps = {
   amount: number
   percentage: number
   icon: any
+  background: string
 }
 
-const WidgetCard = () => {
+const WidgetCard: React.FC<WidgetCardProps> = ({
+  name,
+  amount,
+  percentage,
+  icon,
+  background,
+}) => {
   return (
-    <div className="w-80 rounded-3xl p-10 bg-sky-100 m-4">
-      <h4 className="font-semibold text-black text-xl ">Customers</h4>
-      <div className="flex justify-between text-center align-center mt-4">
-        <p className="font-bold text-4xl">3,781</p>
+    <div className={`rounded-2xl p-6 bg-${background}`}>
+      <h4 className="font-semibold text-black text-xl">{name}</h4>
+      <div className="flex justify-between text-center align-center mt-3 gap-1">
+        <p className="font-bold text-3xl">{amount}</p>
 
         <div className="flex gap-2">
-          <p className="self-center font-medium text-xl">+5.27%</p>
+          <p className="self-center font-medium text-md">+{percentage}%</p>
           <span className="self-center">
-            <Image src={ArrowRise} alt={ArrowRise} width={25} height={25} />
+            <Image src={icon} alt={ArrowRise} width={25} height={25} />
           </span>
         </div>
       </div>

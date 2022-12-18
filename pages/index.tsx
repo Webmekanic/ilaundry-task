@@ -22,10 +22,6 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        {/* <WidgetCard /> */}
-        {/* <StackedBarChart /> */}
-        {/* <NotificationItem /> */}
-        {/* <LocationItem /> */}
       </main>
     </>
   )

@@ -12,9 +12,6 @@ import Revenue from "../components/layouts/Revenue"
 import LineChart from "../components/layouts/LineChart"
 
 const Dashboard = () => {
-  const [isActive, setIsActive] = useState(0)
-  const [state, setState] = useState(true)
-
   return (
     <div className="w-full lg:pb-64 pb-20">
       <div>

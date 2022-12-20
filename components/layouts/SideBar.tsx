@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Image from "next/image"
 import SidebarHeader from "../sidebarHeader"
 import Avatar from "../assets/Avatar.svg"
@@ -15,8 +15,20 @@ import Notebook from "../assets/Notebook.svg"
 import ChatsTeardrop from "../assets/ChatsTeardrop.svg"
 
 const SideBar = () => {
+  const [isActive, setIsActive] = useState(0)
+  const [state, setState] = useState<boolean>(true)
+
+  const setClick = (num: number) => {
+    if (isActive === num) {
+      console.log(num, isActive)
+      setIsActive(0)
+    } else {
+      setIsActive(num)
+    }
+  }
+
   return (
-    <div className="hidden lg:block  border-r-2 border-ash h-full fixed py-4 px-4 scroll-auto">
+    <div className="hidden lg:block  border-r-2 border-ash fixed py-4 px-4">
       <div className="flex gap-3 align-center text-center px-4">
         <Image src={Avatar} alt={Avatar} width={36} height={36} />
         <p className="self-center text-black text-lg">ByeWind</p>
@@ -44,7 +56,29 @@ const SideBar = () => {
         <SidebarHeader title="pages" />
       </div>
       <div>
-        <DashBoardLink text="User Profile" icon={IdentificationBadge} />
+        <div onClick={() => setClick(1)}>
+          <DashBoardLink text="User Profile" icon={IdentificationBadge} />
+        </div>
+
+        {isActive === 1 && (
+          <div className="flex flex-col justify-center align-center">
+            <p className="pl-16 py-1 hover:bg-fadeblue hover:rounded-md">
+              Overview
+            </p>
+            <p className="pl-16 py-1 hover:bg-fadeblue hover:rounded-md">
+              Projects
+            </p>
+            <p className="pl-16 py-1 hover:bg-fadeblue hover:rounded-md">
+              Campaigns
+            </p>
+            <p className="pl-16 py-1 hover:bg-fadeblue hover:rounded-md">
+              Documents
+            </p>
+            <p className="pl-16 py-1 hover:bg-fadeblue hover:rounded-md">
+              Followers
+            </p>
+          </div>
+        )}
       </div>
 
       <DashBoardLink text="Account" icon={IdentificationCard} />

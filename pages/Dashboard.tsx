@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Image from "next/image"
 import Header from "../components/Header"
 import SideBar from "../components/layouts/SideBar"
@@ -12,14 +12,17 @@ import Revenue from "../components/layouts/Revenue"
 import LineChart from "../components/layouts/LineChart"
 
 const Dashboard = () => {
+  const [isActive, setIsActive] = useState(0)
+  const [state, setState] = useState(true)
+
   return (
-    <div className="w-full pb-64">
+    <div className="w-full lg:pb-64 pb-32">
       <div className="">
         <SideBar />
-        <div className="ml-56 mr-72 h-screen">
+        <div className="lg:ml-56 lg:mr-72 lg:h-screen">
           <Header />
-          <div className="grid grid-cols-2 px-4 gap-4 mt-8">
-            <div className="grid grid-cols-2  gap-6">
+          <div className="lg:grid lg:grid-cols-2 px-4 gap-4 mt-8">
+            <div className="lg:grid lg:grid-cols-2 gap-6">
               <WidgetCard
                 name="Customers"
                 amount="$3,781"
@@ -53,12 +56,12 @@ const Dashboard = () => {
               <StackedBarChart />
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-6 mt-6 px-4">
+          <div className="lg:grid lg:grid-cols-4 gap-6 mt-6 px-4">
             <div className="col-start-1 col-end-4 bg-fadeblue rounded-2xl pl-6">
               <LineChart />
             </div>
             <div className="col-start-4 col-end-4 rounded-2xl justify-center bg-fadeblue p-6">
-              <h4 className="flex align-center justify-center font-medium mb-2">
+              <h4 className="flex align-center justify-center font-medium mb-4">
                 Revenue by Location
               </h4>
               <Image src={WorldMap} alt="World Map" />

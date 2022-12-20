@@ -65,7 +65,7 @@ const options: any = {
 
 const LineChart = () => {
   return (
-    <div>
+    <div className="pr-6 pb-3">
       <div className="flex text-center align-center gap-4 py-6">
         <h1 className="font-medium ml-2 self-center">
           Revenue <span className="ml-4 text-lightgray">|</span>

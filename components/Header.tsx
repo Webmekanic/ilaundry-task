@@ -14,13 +14,13 @@ const Header = () => {
         <Image src={SidebarIcon} alt="sidebar" width={20} height={20} />
         <Image src={Star} alt="sidebar" width={20} height={20} />
         <ul className="flex text-center align-center gap-2">
-          <li className="text-md">Dashboard</li> <span>/</span>
+          <li className="text-md text-lightgray">Dashboard</li> <span>/</span>
           <li className="text-md">Default</li>
         </ul>
       </div>
 
       <div className="flex justify-between gap-2">
-        <form className="relative flex items-center text-gray-400 focus-within:text-gray-600 mr-5">
+        <form className="relative  items-center text-gray-400 focus-within:text-gray-600 mr-5 hidden lg:flex">
           <div className="w-5 h-5 absolute ml-3 pointer-events-none">
             <Image src={SearchIcon} alt="sidebar" width={20} height={20} />
           </div>

@@ -16,20 +16,20 @@ import ChatsTeardrop from "../assets/ChatsTeardrop.svg"
 
 const SideBar = () => {
   return (
-    <div className="w-50 border-r-2 border-ash  h-full fixed py-4 px-8">
-      <div className="flex gap-3 align-center text-center">
+    <div className="hidden lg:block border-r-2 border-ash  h-full fixed py-4 px-4 scroll-auto">
+      <div className="flex gap-3 align-center text-center px-4">
         <Image src={Avatar} alt={Avatar} width={36} height={36} />
         <p className="self-center text-black text-lg">ByeWind</p>
       </div>
-      <div className="flex gap-4 mt-6">
+      <div className="flex gap-2 mt-6">
         <SidebarHeader title="Favorites" />
         <SidebarHeader title="Recently" />
       </div>
-      <div className="flex gap-3 text-center align-center mt-2">
+      <div className="flex gap-3 text-center align-center mt-2 px-4">
         <Image src={Ellipse} width={6} height={6} alt={Ellipse} />
         <p className="text-md">Overview</p>
       </div>
-      <div className="flex gap-3 text-center align-center mt-2">
+      <div className="flex gap-3 text-center align-center mt-2 px-4">
         <Image src={Ellipse} width={6} height={6} alt={Ellipse} />
         <p className="text-md text-black">Projects</p>
       </div>
@@ -43,7 +43,10 @@ const SideBar = () => {
       <div className="mt-4">
         <SidebarHeader title="pages" />
       </div>
-      <DashBoardLink text="User Profile" icon={IdentificationBadge} />
+      <div>
+        <DashBoardLink text="User Profile" icon={IdentificationBadge} />
+      </div>
+
       <DashBoardLink text="Account" icon={IdentificationCard} />
       <DashBoardLink text="Corporate" icon={UsersThree} />
       <DashBoardLink text="Blog" icon={Notebook} />

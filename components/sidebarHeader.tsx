@@ -5,7 +5,7 @@ type TitleProps = {
 }
 
 const sidebarHeader: React.FC<TitleProps> = ({ title }) => {
-  return <div className="text-lightgray capitalize text-md">{title}</div>
+  return <div className="text-lightgray capitalize text-md px-3">{title}</div>
 }
 
 export default sidebarHeader

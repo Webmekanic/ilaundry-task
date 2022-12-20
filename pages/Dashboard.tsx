@@ -18,7 +18,8 @@ const Dashboard = () => {
         <SideBar />
         <div className="lg:ml-56 lg:h-screen lg:mr-0 xl:mr-72">
           <Header />
-          <div className=" grid lg:grid lg:grid-cols-2 px-4 gap-4 mt-8">
+          <p className="font-semibold mt-6 ml-4">eCommerce</p>
+          <div className=" grid lg:grid lg:grid-cols-2 px-4 gap-4 mt-6">
             <div className="grid sm:grid sm:grid-cols-2 gap-6">
               <WidgetCard
                 name="Customers"

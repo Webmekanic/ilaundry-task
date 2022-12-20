@@ -15,6 +15,7 @@ module.exports = {
       fadeblue: "#F7F9FB",
       skyblue: "#E3F5FF",
       lightpurple: "#E5ECF6",
+      yellow: "yellow",
     },
     extend: {
       spacing: {

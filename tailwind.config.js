@@ -16,7 +16,12 @@ module.exports = {
       skyblue: "#E3F5FF",
       lightpurple: "#E5ECF6",
     },
-    extend: {},
+    extend: {
+      spacing: {
+        128: "32rem",
+        144: "36rem",
+      },
+    },
   },
   plugins: [require("@tailwindcss/line-clamp")],
 }

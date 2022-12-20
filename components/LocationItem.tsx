@@ -3,7 +3,7 @@ import React from "react"
 type LocationProp = {
   city?: string
   revenue?: string | number
-  width: number
+  width: string
 }
 
 const LocationItem: React.FC<LocationProp> = ({ city, revenue, width }) => {
@@ -14,7 +14,12 @@ const LocationItem: React.FC<LocationProp> = ({ city, revenue, width }) => {
         <p>{revenue}</p>
       </div>
       <div className="bg-lightblue h-1 w-full mt-3 rounded-xl">
-        <div className={`w-${width} bg-deepblue h-full rounded-xl`}></div>
+        <div
+          className={`bg-deepblue h-full rounded-xl`}
+          style={{
+            width: `${width}`,
+          }}
+        ></div>
       </div>
     </div>
   )

@@ -8,7 +8,7 @@ const data = {
   datasets: [
     {
       // label: "First dataset",
-      data: [35, 45, 45, 58, 64, 68, 75],
+      data: [7500, 800, 1000, 1000, 2000, 2000, 2000, 20000],
       fill: false,
       pointRadius: 0,
       tension: 0.4,
@@ -16,7 +16,7 @@ const data = {
     },
     {
       // label: "Second dataset",
-      data: [33, 35, 40, 51, 54, 66, 70],
+      data: [5000, 0, 10000, 10000, 15000, 16000, 18000, 10000],
       fill: false,
       pointRadius: 0,
       tension: 0.4,
@@ -43,24 +43,27 @@ const options = {
     },
     y: {
       stacked: true,
-
-      // ticks: {
-      //   beginAtZero: true,
-      //   maxTicksLimit: 6,
-      //   // padding: 20,
-      //   callback(n: number) {
-      //     if (n < 1e3) return n
-      //     if (n >= 1e3) return +(n / 1e3).toFixed(1) + "K"
-      //   },
-      // },
+      ticks: {
+        beginAtZero: true,
+        padding: 1,
+        // min: 0,
+        // max: 36000,
+        stepSize: 9000,
+        suggestedMin: 36000,
+        suggestedMax: 9000,
+        callback(n: number) {
+          if (n < 900) return n
+          if (n >= 1000) return +(n / 1000).toFixed(1) + "K"
+        },
+      },
     },
   },
 }
 
 const LineChart = () => {
   return (
-    <div className="App">
-      <h1 className="font-medium ml-2 mb-2">Revenue</h1>
+    <div>
+      <h1 className="font-medium ml-2 mb-2 py-4">Revenue</h1>
       <Line data={data} options={options} />
     </div>
   )

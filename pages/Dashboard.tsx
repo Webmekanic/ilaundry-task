@@ -13,7 +13,7 @@ import LineChart from "../components/layouts/LineChart"
 
 const Dashboard = () => {
   return (
-    <div className="w-full pb-24">
+    <div className="w-full pb-64">
       <div className="">
         <SideBar />
         <div className="ml-56 mr-72 h-screen">
@@ -22,31 +22,31 @@ const Dashboard = () => {
             <div className="grid grid-cols-2  gap-6">
               <WidgetCard
                 name="Customers"
-                amount={3781}
-                percentage={5.27}
+                amount="$3,781"
+                percentage="+5.27%"
                 icon={ArrowRise}
-                background="fadeblue"
+                background="#E3F5FF"
               />
               <WidgetCard
                 name="Orders"
-                amount={3219}
-                percentage={1.78}
+                amount="3,219"
+                percentage="+1.78%"
                 icon={ArrowRise}
-                background="fadeblue"
+                background="#F7F9FB"
               />
               <WidgetCard
                 name="Revenue"
-                amount={695}
-                percentage={0.56}
+                amount="$695"
+                percentage="-0.56%"
                 icon={ArrowFall}
-                background="fadeblue"
+                background="#F7F9FB"
               />
               <WidgetCard
                 name="Growth"
-                amount={30.1}
-                percentage={1.48}
+                amount="30.1%"
+                percentage="+1.48%"
                 icon={ArrowRise}
-                background="red"
+                background="#E5ECF6"
               />
             </div>
             <div className="bg-fadeblue p-4 rounded-2xl">

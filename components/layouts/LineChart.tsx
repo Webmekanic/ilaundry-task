@@ -54,6 +54,7 @@ const options: any = {
         stepSize: 9000,
         suggestedMin: 36000,
         suggestedMax: 9000,
+        // Add "k" to values greater than 900
         callback(n: number) {
           if (n < 900) return n
           if (n >= 1000) return +(n / 1000).toFixed(1) + "K"

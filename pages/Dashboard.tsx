@@ -64,7 +64,15 @@ const Dashboard = () => {
               <h4 className="flex align-center justify-center font-medium mb-4">
                 Revenue by Location
               </h4>
-              <Image src={WorldMap} alt="World Map" />
+              <div className="">
+                <Image
+                  src={WorldMap}
+                  alt="World Map"
+                  layout="responsive"
+                  objectFit="cover"
+                />
+              </div>
+
               <Revenue />
             </div>
           </div>

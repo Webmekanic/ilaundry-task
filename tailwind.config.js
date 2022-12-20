@@ -17,12 +17,7 @@ module.exports = {
       lightpurple: "#E5ECF6",
       yellow: "yellow",
     },
-    extend: {
-      spacing: {
-        128: "32rem",
-        144: "36rem",
-      },
-    },
+    extend: {},
   },
   plugins: [require("@tailwindcss/line-clamp")],
 }

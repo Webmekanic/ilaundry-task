@@ -13,14 +13,16 @@ const Header = () => {
   const [toggle, setToggle] = useState(false)
 
   const handleClick = () => {
-    setToggle(!toggle)
+    if (true) {
+      setToggle(!toggle)
+    }
   }
 
   return (
     <>
       {toggle && (
         <div>
-          <MobileMenu />
+          <MobileMenu CloseMenu={handleClick} />
         </div>
       )}
       <nav className="flex m-auto border-b-2 border-ash justify-between py-4 px-8">

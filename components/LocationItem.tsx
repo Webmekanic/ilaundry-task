@@ -3,7 +3,7 @@ import React from "react"
 type LocationProp = {
   city?: string
   revenue?: string | number
-  width?: number
+  width: number
 }
 
 const LocationItem: React.FC<LocationProp> = ({ city, revenue, width }) => {

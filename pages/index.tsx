@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/ilaundry-logo.png" />
       </Head>
       <main>
-        <Header />
+        <Dashboard />
       </main>
     </>
   )

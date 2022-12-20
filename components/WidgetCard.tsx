@@ -21,7 +21,7 @@ const WidgetCard: React.FC<WidgetCardProps> = ({
     <div className={`rounded-2xl p-6`} style={{ background: `${background}` }}>
       <h4 className="font-semibold text-black text-xl">{name}</h4>
       <div className="flex justify-between text-center align-center mt-3 gap-1">
-        <p className="font-bold text-3xl">{amount} </p>
+        <p className="font-medium text-3xl">{amount} </p>
 
         <div className="flex gap-2">
           <p className="self-center font-medium text-md">{percentage}</p>

@@ -1,4 +1,7 @@
 import React from "react"
+import Image from "next/image"
+import BlackDot from "../assets/BlackDot.svg"
+import BlueDot from "../assets/BlueDot.svg"
 import { Line } from "react-chartjs-2"
 import { Chart, registerables } from "chart.js"
 Chart.register(...registerables)
@@ -8,7 +11,7 @@ const data = {
   datasets: [
     {
       // label: "First dataset",
-      data: [7500, 800, 1000, 1000, 2000, 2000, 2000, 20000],
+      data: [8000, 10000, 12000, 10000, 15000, 16000, 18000, 20000],
       fill: false,
       pointRadius: 0,
       tension: 0.4,
@@ -16,7 +19,7 @@ const data = {
     },
     {
       // label: "Second dataset",
-      data: [5000, 0, 10000, 10000, 15000, 16000, 18000, 10000],
+      data: [5000, 7000, 10000, 10000, 15000, 16000, 18000, 10000],
       fill: false,
       pointRadius: 0,
       tension: 0.4,
@@ -25,7 +28,7 @@ const data = {
   ],
 }
 
-const options = {
+const options: any = {
   responsive: true,
   plugins: {
     legend: {
@@ -63,7 +66,24 @@ const options = {
 const LineChart = () => {
   return (
     <div>
-      <h1 className="font-medium ml-2 mb-2 py-4">Revenue</h1>
+      <div className="flex text-center align-center gap-4 py-6">
+        <h1 className="font-medium ml-2 self-center">
+          Revenue <span className="ml-4 text-lightgray">|</span>
+        </h1>
+        <div className="flex text-center align-center  self-center">
+          <Image src={BlackDot} width={6} height={6} alt="Black Dot" />
+          <p className="flex self-center ml-2 text-black">
+            Current Week $58,211
+          </p>
+        </div>
+        <div className="flex text-center align-center self-center">
+          <Image src={BlueDot} width={6} height={6} alt="Black Dot" />
+          <h4 className="flex self-center ml-2 text-black">
+            Previous Week $68,768
+          </h4>
+        </div>
+      </div>
+
       <Line data={data} options={options} />
     </div>
   )

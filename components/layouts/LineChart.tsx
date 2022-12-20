@@ -69,7 +69,7 @@ const LineChart = () => {
     <div className="pr-6 pb-3">
       <div className="flex text-center align-center gap-4 py-6">
         <h1 className="font-medium ml-2 self-center">
-          Revenue <span className="ml-4 text-lightgray">|</span>
+          Revenue <span className="ml-4 text-lightgray hidden lg:block">|</span>
         </h1>
         <div className="flex text-center align-center  self-center">
           <Image src={BlackDot} width={6} height={6} alt="Black Dot" />

@@ -16,6 +16,7 @@ module.exports = {
       skyblue: "#E3F5FF",
       lightpurple: "#E5ECF6",
       yellow: "yellow",
+      white: "#FFFFFF",
     },
     extend: {},
   },

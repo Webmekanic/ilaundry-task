@@ -7,18 +7,23 @@ import Sun from "./assets/Sun.svg"
 import Clock from "./assets/ClockCounterClockwise.svg"
 import Bell from "./assets/Bell.svg"
 import BarsSolid from "./assets/BarsSolid.svg"
-import SideBar from "./layouts/SideBar"
+import MobileMenu from "./layouts/MobileMenu"
 
 const Header = () => {
   const [toggle, setToggle] = useState(false)
 
   const handleClick = () => {
+    // console.log("clciked")
     setToggle(!toggle)
-    // console.log("clicked....")
   }
 
   return (
     <>
+      {toggle && (
+        <div>
+          <MobileMenu />
+        </div>
+      )}
       <nav className="flex m-auto border-b-2 border-ash justify-between py-4 px-8">
         <div className="flex self-center justify-between align-center text-center gap-2">
           <div

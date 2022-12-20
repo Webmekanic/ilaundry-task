@@ -7,6 +7,7 @@ import { Chart, registerables } from "chart.js"
 Chart.register(...registerables)
 
 const data = {
+  // x-axis data set
   labels: ["Mon", "Tue", "Wed", "Thurs", "Fri", "Sar", "Sun"],
   datasets: [
     {
@@ -68,7 +69,7 @@ const LineChart = () => {
   return (
     <div className="pr-6 pb-3">
       <div className="flex text-center align-center gap-4 py-6">
-        <h1 className="font-medium ml-2 self-center">
+        <h1 className=" flex font-medium ml-2 self-center">
           Revenue <span className="ml-4 text-lightgray hidden lg:block">|</span>
         </h1>
         <div className="flex text-center align-center  self-center">

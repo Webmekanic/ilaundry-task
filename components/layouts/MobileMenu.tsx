@@ -21,7 +21,6 @@ type Props = {
 
 const MobileMenu: React.FC<Props> = ({ CloseMenu }) => {
   const [isActive, setIsActive] = useState(0)
-  // const [state, setState] = useState(true)
 
   const setClick = (num: number) => {
     if (isActive === num) {

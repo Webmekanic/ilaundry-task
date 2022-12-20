@@ -28,7 +28,7 @@ const MobileMenu = () => {
   }
 
   return (
-    <div className="lg:hidden fixed py-4 px-4 bg-white h-full overflow-y-scroll">
+    <div className="lg:hidden fixed w-64 py-4 px-4 bg-white h-full overflow-y-scroll">
       <div className="flex gap-3 align-center text-center px-4">
         <Image src={Avatar} alt={Avatar} width={36} height={36} />
         <p className="self-center text-black text-lg">ByeWind</p>

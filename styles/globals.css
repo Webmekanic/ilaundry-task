@@ -8,3 +8,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+  color: #046d33;
+  transition: all 0.4s ease;
+}
+::-webkit-scrollbar-thumb {
+  background: #a8c5da;
+  border-radius: 7px;
+  width: 7px;
+  transition: all 0.4s ease;
+}
+::-webkit-scrollbar-track {
+  background: #e5ecf6;
+  border-radius: 7px;
+  width: 7px;
+}

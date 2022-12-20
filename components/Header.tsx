@@ -13,7 +13,6 @@ const Header = () => {
   const [toggle, setToggle] = useState(false)
 
   const handleClick = () => {
-    // console.log("clciked")
     setToggle(!toggle)
   }
 

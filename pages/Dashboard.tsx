@@ -60,7 +60,7 @@ const Dashboard = () => {
             <div className="col-start-1 col-end-4 bg-fadeblue rounded-2xl pl-6">
               <LineChart />
             </div>
-            <div className="col-start-4 col-end-4 rounded-2xl justify-center bg-fadeblue p-6">
+            <div className="col-start-4 col-end-4 rounded-2xl justify-center bg-fadeblue p-6 mt-6 lg:mt-0">
               <h4 className="flex align-center justify-center font-medium mb-4">
                 Revenue by Location
               </h4>

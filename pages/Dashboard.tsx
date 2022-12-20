@@ -16,13 +16,13 @@ const Dashboard = () => {
   const [state, setState] = useState(true)
 
   return (
-    <div className="w-full lg:pb-64 pb-32">
+    <div className="w-full lg:pb-64 pb-20">
       <div>
         <SideBar />
         <div className="lg:ml-56 lg:h-screen lg:mr-0 xl:mr-72">
           <Header />
-          <div className="lg:grid lg:grid-cols-2 px-4 gap-4 mt-8">
-            <div className=" sm:grid sm:grid-cols-2 gap-6">
+          <div className=" grid lg:grid lg:grid-cols-2 px-4 gap-4 mt-8">
+            <div className="grid sm:grid sm:grid-cols-2 gap-6">
               <WidgetCard
                 name="Customers"
                 amount="$3,781"
@@ -64,7 +64,7 @@ const Dashboard = () => {
               <h4 className="flex align-center justify-center font-medium mb-4">
                 Revenue by Location
               </h4>
-              <div className="">
+              <div>
                 <Image
                   src={WorldMap}
                   alt="World Map"

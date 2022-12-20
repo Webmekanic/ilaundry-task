@@ -22,7 +22,7 @@ const Dashboard = () => {
             <div className="grid sm:grid sm:grid-cols-2 gap-6">
               <WidgetCard
                 name="Customers"
-                amount="$3,781"
+                amount="3,781"
                 percentage="+5.27%"
                 icon={ArrowRise}
                 background="#E3F5FF"
@@ -58,7 +58,7 @@ const Dashboard = () => {
               <LineChart />
             </div>
             <div className="col-start-4 col-end-4 rounded-2xl justify-center bg-fadeblue p-6 mt-6 lg:mt-0">
-              <h4 className="flex align-center justify-center font-medium mb-4">
+              <h4 className="flex align-center text-sm justify-center font-medium mb-4">
                 Revenue by Location
               </h4>
               <div>

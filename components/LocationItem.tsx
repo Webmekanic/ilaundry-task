@@ -9,7 +9,7 @@ type LocationProp = {
 const LocationItem: React.FC<LocationProp> = ({ city, revenue, width }) => {
   return (
     <div className="mb-4">
-      <div className="w-full flex justify-between text-lg">
+      <div className="w-full flex justify-between text-md">
         <h4>{city}</h4>
         <p>{revenue}</p>
       </div>

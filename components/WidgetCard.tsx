@@ -18,15 +18,13 @@ const WidgetCard: React.FC<WidgetCardProps> = ({
   background,
 }) => {
   return (
-    <div className="rounded-2xl p-6" style={{ background: `${background}` }}>
+    <div className="rounded-2xl p-5" style={{ background: `${background}` }}>
       <h4 className="font-semibold text-black text-lg xl:text-xl">{name}</h4>
       <div className="flex justify-between text-center align-center mt-3 gap-1">
-        <p className="font-medium xl:text-3xl text-xl">{amount} </p>
+        <p className="font-medium text-2xl">{amount} </p>
 
         <div className="flex gap-2">
-          <p className="self-center font-medium xl:text-md text-sm">
-            {percentage}
-          </p>
+          <p className="self-center font-medium text-sm">{percentage}</p>
           <span className="self-center">
             <Image src={icon} alt={ArrowRise} width={25} height={25} />
           </span>
